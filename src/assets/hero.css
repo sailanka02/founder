@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     height: 100vh; /* Full viewport height */
-    width: 2000px; /* Ensure it spans the full width */
+    width: 100vw; /* Ensure it spans the full width */
     background-color: #000; /* Black background */
     color: #fff; /* White text */
     margin: 0; /* Remove any unwanted margins */
@@ -16,7 +16,7 @@
   .hero-content {
     text-align: center;
     width: 100%; /* Allow it to stretch fully */
-    padding: 2rem;
+    padding: 0;
   }
   
   .hero-title {
