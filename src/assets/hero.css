@@ -1,77 +1,175 @@
-/* HeroSection.css */
+/* General Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* Ensure child elements stretch to full width */
+}
+
+/* Hero Section */
+.home-page {
+  position: relative;
+  margin-top: 60px; /* Offset for the fixed header */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+}
+
 .hero-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Full viewport height */
-    width: 100vw; /* Ensure it spans the full width */
-    background-color: #000; /* Black background */
-    color: #fff; /* White text */
-    margin: 0; /* Remove any unwanted margins */
-    padding: 0; /* Remove any unwanted padding */
-    box-sizing: border-box; 
-  }
-  
-  .hero-content {
-    text-align: center;
-    width: 100%; /* Allow it to stretch fully */
-    padding: 0;
-  }
-  
-  .hero-title {
-    font-size: 4rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
-  }
-  
-  .hero-buttons {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-  }
-  
-  .hero-btn {
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .hero-btn.sign-in {
-    background-color: transparent;
-    color: #fff;
-    border: 1px solid #fff;
-  }
-  
-  .hero-btn.sign-in:hover {
-    background-color: #fff;
-    color: #000;
-  }
-  
-  .hero-btn.register {
-    background-color: #fff;
-    color: #000;
-  }
-  
-  .hero-btn.register:hover {
-    background-color: #999;
-    color: #fff;
-  }
-  
-  /* Global Reset to Remove Margins and Padding */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html, body {
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-  }
-  
-  
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.hero-title .dot {
+  color: #c989eb;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.hero-btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hero-btn.sign-in {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.hero-btn.sign-in:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.hero-btn.register {
+  background-color: #fff;
+  color: #000;
+}
+
+.hero-btn.register:hover {
+  background-color: #999;
+  color: #fff;
+}
+
+/* Hero Image */
+.hero-image-container {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 1280px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Trending Section */
+.trending-section {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.trending-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+  text-align: center;
+}
+
+.trending-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+.trending-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-content h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.card-content p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer-columns h3 {
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.footer-columns ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-columns li {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 0.5rem;
+}

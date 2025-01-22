@@ -1,0 +1,270 @@
+/* ------------------------------
+   Variables
+------------------------------ */
+:root {
+    --accent-purple: #7f67f6; /* Purple accent from the mockup */
+    --black: #000000;
+    --white: #ffffff;
+    --gray-100: #f5f5f5;
+    --gray-200: #eeeeee;
+    --gray-300: #cccccc;
+    --gray-700: #333333;
+    --gray-800: #222222;
+  }
+  
+  /* Remove default margin/padding, set border-box */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  /* Make sure body is white so the white sections match the mockup */
+  body {
+    background-color: var(--white);
+  }
+  
+  /* Container for the entire page */
+  .portfolio-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* ------------------------------
+     NAVBAR (White background)
+  ------------------------------ */
+  .navbar {
+    width: 100%;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  
+  /* Left: Logo or "B" */
+  .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--black);
+  }
+  
+  /* Center: Nav links */
+  .navbar-links ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 500;
+  }
+  
+  /* Right: Buttons */
+  .navbar-buttons {
+    display: flex;
+    gap: 0.75rem;
+  }
+  
+  .signin-btn,
+  .register-btn {
+    border: 1px solid var(--black);
+    background-color: var(--white);
+    color: var(--black);
+    cursor: pointer;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .signin-btn:hover,
+  .register-btn:hover {
+    background-color: var(--black);
+    color: var(--white);
+  }
+  
+  /* ------------------------------
+     HERO SECTION (Black background)
+  ------------------------------ */
+  .hero-section {
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    padding: 5rem 2rem;
+  }
+  
+  .hero-name {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+  }
+  
+  .hero-description {
+    font-size: 1.25rem;
+    color: var(--accent-purple); /* Purple subheading */
+    margin-bottom: 2rem;
+  }
+  
+  .hero-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .hero-icons svg {
+    stroke: var(--accent-purple);
+    width: 24px;
+    height: 24px;
+  }
+  
+  .hero-icons a:hover svg {
+    stroke: var(--white);
+  }
+  
+  /* ------------------------------
+     COMPANIES SECTION (White background)
+  ------------------------------ */
+  .companies-section {
+    background-color: var(--white);
+    color: var(--black);
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  
+  .companies-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .companies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .company-card {
+    border: 1px solid var(--accent-purple);
+    border-radius: 6px;
+    padding: 1.5rem;
+    transition: box-shadow 0.3s;
+    background-color: var(--white);
+  }
+  
+  .company-card:hover {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .company-card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: var(--black);
+  }
+  
+  .company-card p {
+    font-size: 0.95rem;
+    color: var(--gray-700);
+    line-height: 1.5;
+  }
+  
+  /* ------------------------------
+     EXPERIENCE SECTION (Black background)
+  ------------------------------ */
+  .experience-section {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  
+  .experience-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .exp-card {
+    max-width: 900px;
+    margin: 0.75rem auto;
+    padding: 1.5rem;
+    border: 1px solid var(--accent-purple);
+    border-radius: 6px;
+    text-align: left; /* Usually read-friendly for paragraphs */
+    background-color: var(--black);
+  }
+  
+  .exp-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--white);
+  }
+  
+  .exp-card p {
+    line-height: 1.5;
+    color: var(--gray-300);
+  }
+  
+  /* ------------------------------
+     FOOTER SECTION (White background)
+  ------------------------------ */
+  .footer-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    background-color: var(--white);
+    color: var(--black);
+    padding: 2rem;
+    justify-content: space-between;
+  }
+  
+  .footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-width: 150px;
+  }
+  
+  .footer-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--black);
+  }
+  
+  .footer-socials {
+    display: flex;
+    gap: 0.5rem;
+    font-weight: 600;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .footer-column h4 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column li {
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .footer-column li:hover {
+    color: var(--accent-purple);
+  }
+  
