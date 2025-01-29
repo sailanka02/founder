@@ -8,17 +8,22 @@
   align-items: center;
   background-color: #f9f9f9;
   width: 100%;
-  margin-top: 60px; /* Offset for the fixed header */
+  
 }
 
 /* Header Section */
-.companies-header {
-  width: 100%;
+.companies-hero {
   background-color: #000;
   color: #fff;
+  width: 100%;
+  height: 50vh; /* Full viewport height */
+  display: flex; /* Enable Flexbox */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
   text-align: center;
-  padding: 3rem 0; /* Increased padding for spacing */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  padding: 0; /* Remove extra padding */
+  box-sizing: border-box; /* Include padding in the element's width and height */
 }
 
 .page-title {

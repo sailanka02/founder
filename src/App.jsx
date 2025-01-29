@@ -6,6 +6,7 @@ import HeroSection from './assets/hero';
 import CompaniesPage from './pages/CompaniesPage';
 import PortfolioPage from './pages/PortfolioPage';
 import CompanyInfoPage from './pages/CompanyInfoPage';
+import Footer from './assets/footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/portfolio" element={<PortfolioPage />} />
         <Route path="/company-info" element={<CompanyInfoPage />} />
       </Routes>
+      <Footer/>
     </Router>
   );
 }

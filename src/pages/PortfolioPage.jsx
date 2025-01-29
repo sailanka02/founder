@@ -5,27 +5,8 @@ const PortfolioPage = () => {
   return (
     <div className="portfolio-page">
 
-      {/* ========== TOP NAV BAR ========== */}
-      <header className="navbar">
-        <div className="navbar-logo">B</div>
-        <nav className="navbar-links">
-          <ul>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#solutions">Solutions</a></li>
-            <li><a href="#community">Community</a></li>
-            <li><a href="#resources">Resources</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-        <div className="navbar-buttons">
-          <button className="signin-btn">Sign In</button>
-          <button className="register-btn">Register</button>
-        </div>
-      </header>
-
       {/* ========== HERO SECTION ========== */}
-      <section className="hero-section">
+      <section className="hero-portfolio">
         <h1 className="hero-name">Name</h1>
         <p className="hero-description">Personal Description</p>
         <div className="hero-icons">
@@ -104,58 +85,6 @@ const PortfolioPage = () => {
           </p>
         </div>
       </section>
-
-      {/* ========== FOOTER ========== */}
-      <footer className="footer-section">
-        <div className="footer-brand">
-          <div className="footer-logo">B</div>
-          <div className="footer-socials">
-            {/* Replace these placeholders with actual icons if desired */}
-            <span>X</span>
-            <span>O</span>
-            <span>YT</span>
-            <span>LI</span>
-          </div>
-        </div>
-        <div className="footer-links">
-          <div className="footer-column">
-            <h4>Use cases</h4>
-            <ul>
-              <li>UI design</li>
-              <li>UX design</li>
-              <li>Wireframing</li>
-              <li>Diagramming</li>
-              <li>Brainstorming</li>
-              <li>Online whiteboard</li>
-              <li>Team collaboration</li>
-            </ul>
-          </div>
-          <div className="footer-column">
-            <h4>Explore</h4>
-            <ul>
-              <li>Design</li>
-              <li>Prototyping</li>
-              <li>Development features</li>
-              <li>Design systems</li>
-              <li>Collaboration features</li>
-              <li>Design process</li>
-              <li>FigJam</li>
-            </ul>
-          </div>
-          <div className="footer-column">
-            <h4>Resources</h4>
-            <ul>
-              <li>Blog</li>
-              <li>Best practices</li>
-              <li>Colors</li>
-              <li>Color wheel</li>
-              <li>Support</li>
-              <li>Developers</li>
-              <li>Resource library</li>
-            </ul>
-          </div>
-        </div>
-      </footer>
 
     </div>
   );

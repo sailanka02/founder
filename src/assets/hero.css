@@ -32,14 +32,20 @@ body, html {
   background-color: #000;
   color: #fff;
   width: 100%;
-  padding: 5rem 0;
+  height: 95vh ; /* Full viewport height */
+  display: flex; /* Enable Flexbox */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
   text-align: center;
+  padding: 0; /* Remove extra padding */
+  box-sizing: border-box; /* Include padding in the element's width and height */
 }
 
 .hero-title {
   font-size: 4rem;
   font-weight: bold;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem; /* Adjust spacing between title and buttons */
 }
 
 .hero-title .dot {
@@ -49,8 +55,7 @@ body, html {
 .hero-buttons {
   display: flex;
   justify-content: center;
-  gap: 1rem;
-  margin-bottom: 3rem;
+  gap: 1rem; /* Space between buttons */
 }
 
 .hero-btn {
@@ -59,7 +64,7 @@ body, html {
   border-radius: 5px;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease;
 }
 
 .hero-btn.sign-in {
@@ -86,13 +91,13 @@ body, html {
 /* Hero Image */
 .hero-image-container {
   width: 100%;
-  margin: 2rem 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Center the image */
 }
 
 .hero-image {
   width: 100%;
-  max-width: 1280px;
-  border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -101,7 +106,7 @@ body, html {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 2rem 5rem 2rem;
   box-sizing: border-box;
 }
 
@@ -114,7 +119,7 @@ body, html {
 
 .trending-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
   gap: 2rem;
   width: 100%;
 }
@@ -155,6 +160,7 @@ body, html {
   max-width: 1280px;
   margin: 0 auto;
   flex-wrap: wrap;
+  gap: 2rem; /* Add gap for wrapping columns */
 }
 
 .footer-columns h3 {
