@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import './hero.css';
 
 const HeroSection = () => {
@@ -19,8 +20,9 @@ const HeroSection = () => {
           Founder<span className="dot">.</span>
         </h1>
         <div className="hero-buttons">
-          <button className="hero-btn sign-in">Sign In</button>
-          <button className="hero-btn register">Register</button>
+          {/* Use Link for navigation */}
+          <Link to="/signin" className="hero-btn sign-in">Sign In</Link>
+          <Link to="/create-profile" className="hero-btn register">Register</Link>
         </div>
       </div>
 
@@ -48,8 +50,6 @@ const HeroSection = () => {
           ))}
         </div>
       </section>
-
-      
     </div>
   );
 };
