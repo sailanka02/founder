@@ -1,6 +1,6 @@
 import React from 'react';
 import './header.css';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'; 
 
 const Header = () => {
   return (
@@ -17,8 +17,9 @@ const Header = () => {
         </ul>
       </nav>
       <div className="header__actions">
-        <button className="btn sign-in">Sign In</button>
-        <button className="btn register">Register</button>
+        {/* Use Link for navigation */}
+        <Link to="/signin" className="btn sign-in">Sign In</Link>
+        <Link to="/create-profile" className="btn register">Register</Link>
       </div>
     </header>
   );
